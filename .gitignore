@@ -1,23 +1,12 @@
-.DS_Store
-**/.idea/
-.vscode/
-dist/
-
+# 忽略运行生成的二进制文件夹
 build/
-sync/
+
+# 忽略个人词库数据库（这是报错的根源）
 *.userdb/
+
+# 忽略程序自动生成的本地安装信息
 installation.yaml
 user.yaml
-*.custom.yaml
-!others/**/*.custom.yaml
 
-custom_phrase_double.txt
-others/script/scel2txt/out/*
-others/script/scel2txt/scel/*
-cn_dicts/temp.txt
-
-*private*
-
-rime_console
-rime_deployer
-rime_patch
+# 忽略日志文件
+*.log
